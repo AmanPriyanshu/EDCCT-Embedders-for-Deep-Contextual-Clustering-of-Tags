@@ -20,10 +20,11 @@ While approaching this problem, we ran into two major problems, we were able to 
 
 ## Executing-our-Project:
 
-1. To extract reviews in CSV file please execute: reader.py
-2. To generate tags based on frequency please execute: tagger.py
-3. To cluster similar tags product wise please execute: embedders.py
-4. To look at results, please download: [https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip)
+1. To extract reviews from JSON into CSV file please execute: reader.py
+2. To extract product-wise reviews please execute: product_wise_generator.pu
+3. To generate tags based on frequency please execute: tagger.py
+4. To cluster similar tags product wise please execute: embedders.py
+5. To look at results, please download: [https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip)
 
 
 ## Project-Demo:
