@@ -14,6 +14,6 @@ def getDF(path):
     i += 1
   return pd.DataFrame.from_dict(df, orient='index')
 
-df = getDF('reviews_Cell_Phones_and_Accessories_5.json.gz')
+df = getDF('./raw_data/reviews_Cell_Phones_and_Accessories_5.json.gz')
 
 df.to_csv('reviews_Cell_Phones_and_Accessories_5.csv', index=False)
