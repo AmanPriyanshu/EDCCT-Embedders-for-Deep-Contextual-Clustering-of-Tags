@@ -16,7 +16,7 @@ EDCCT solves the problem of multiple tags referring to the same thing by combini
 
 ## Challenges we ran into:
 
-While approaching this problem, we ran into two major problems, we were able to overcome both of them. The first one being, frequency based tags, did not give accurate representation of product-reviews. Secondly, lookup word embeddings did not give accurate cluster results, therefore we finally propose a deep contextual representation using Universal Sentence Encoder to embed and cluster similar tags.
+While approaching this problem, we ran into two major problems, we were able to overcome both of them. The first one being, frequency based tags, did not give accurate representation of product-reviews. Secondly, lookup word embeddings did not give accurate cluster results, therefore we finally propose a deep contextual representation using Universal Sentence Encoder to embed and cluster similar tags. We were able to solve both the problems we faced, by using contextual representation, thereby allowing us to get substantial results, you can check our results at [RESULTS](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip)
 
 ## Executing-our-Project:
 
