@@ -21,7 +21,7 @@ While approaching this problem, we ran into two major problems, we were able to 
 ## Project-Demo:
 
 We have analysed and worked with three embeddings, namely: Universal Sentence Encoders, BERT, GloVe. We finally propose Universal Sentence Encoder as the ideal embedder.
-[Please Check Out Out Demo](https://docs.google.com/document/d/1ehXetnZB1Mypdjsxc9VutyriNOssn_wdm5SDT_PEDsM/edit?usp=sharing)
+[Please Check Out Our Demo](https://docs.google.com/document/d/1ehXetnZB1Mypdjsxc9VutyriNOssn_wdm5SDT_PEDsM/edit?usp=sharing)
 
 ```console
 Product: B007FXMOV8
