@@ -6,7 +6,7 @@ Team, JSON Bourne presents EDCCT ( Embedders for Deep Contextual Clustering of T
 
 EDCCT - Embedders for Deep Contextual Clustering of Tags
 
-## TAGLINE: 
+## SYNOPSIS: 
 
 Team, JSON Bourne presents EDCCT ( Embedders for Deep Contextual Clustering of Tags ), a practical approach towards accurate contextual clustering of review tags. We use linguistic embedders ([1]: Look Up Word embeddings, [2] Contextual Word Embeddings and [3] Sentence Embeddings) to derive vectorial representation of each of the tags, following which we used cosine similarity to cluster them.
 
