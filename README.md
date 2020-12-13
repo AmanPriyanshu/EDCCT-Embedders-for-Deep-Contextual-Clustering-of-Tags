@@ -21,10 +21,10 @@ While approaching this problem, we ran into two major problems, we were able to 
 ## Executing-our-Project:
 
 0. Please install all the necessary libraries mentioned in `requirements.txt`
-1. To extract reviews from JSON into CSV file please execute: `reader.py`
-2. To extract product-wise reviews please execute: `product_wise_generator.py`
-3. To generate tags based on frequency please execute: `tagger.py`
-4. To cluster similar tags product wise please execute: `embedders.py`
+1. To extract reviews from JSON into CSV file please execute: `reader.py` which will return data in a CSV format: `reviews_Cell_Phones_and_Accessories_5/csv`
+2. To extract product-wise reviews please execute: `product_wise_generator.py` which will geenrate a directory, with product-wise reviews: `product_wise_reviews` 
+3. To generate tags based on frequency please execute: `tagger.py` which will generate a CSV file containing frequency based tags of reviews: `product_wise_tags.csv`
+4. To cluster similar tags product wise please execute: `embedders.py` which will generate final clustered output in the directory: `combined_tags_use`
 5. To look at results, please download: [https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip)
 
 ## Side-Note:
