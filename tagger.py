@@ -19,11 +19,11 @@ if setup:
 class TagGenerator:
 	def __init__(self):
 		self.stop = [i.lower() for i in stop]
-		self.unimportant_words = stop + [i.lower() for i in "almost a about all and are as at back be because been but can can't come could did didn't do don't for from get go going good got had have he her here he's hey him his how I if I'll I'm in is it it's just know like look me mean my no not now of oh OK okay on one or out really right say see she so some something tell that that's the then there they think this time to up want was we well were what when who why will with would yeah yes you your you're".replace("'", "").split()]
+		self.unimportant_words = stop + [i.lower() for i in "34 almost a about all and are as at back be because been but can can't come could did didn't do don't for from get go going good got had have he her here he's hey him his how I if I'll I'm in is it it's just know like look me mean my no not now of oh OK okay on one or out really right say see she so some something tell that that's the then there they think this time to up want was we well were what when who why will with would yeah yes you your you're".replace("'", "").split()]
 		self.rejected_tags = ['PRP', 'NNP', 'WDT', 'WP', 'WP$', 'WRB', 'UH', 'PRP$', 'CC', 'IN', 'TO', 'MD', 'DT']
 		self.w_dual = [0.3, 0.5]
 		self.w_tri = [0.2, 0.3, 0.3]
-		self.ids_weight = 0.6
+		self.ids_weight = 0
 		self.dual_weight, self.tri_weight = 0.5, 0.4
 		self.disable = False
 
@@ -60,23 +60,16 @@ class TagGenerator:
 		for n in range(1, 4):
 			grams[n], weights[n] = self.n_grammer(arr, n)
 
-		dual_tags_weightage = np.array([self.w_dual[1]*j + self.w_dual[0]*sum([weights[1][grams[1].tolist().index(w)] for w in i.split()]) for i,j in zip(grams[2], weights[2])])
-		index = np.argsort(dual_tags_weightage)[::-1]
-		dual_tags = grams[2][index]
-		dual_tags_weightage = dual_tags_weightage[index]
-
-		tri_tags_weightage = np.array([self.w_tri[2]*j + self.w_tri[1]*sum([weights[2][grams[2].tolist().index(' '.join(i.split()[w:w+2]))] for w in range(2)]) + self.w_tri[0]*sum([weights[1][grams[1].tolist().index(w)] for w in i.split()]) for i,j in zip(grams[3], weights[3])])
-		index = np.argsort(tri_tags_weightage)[::-1]
-		tri_tags = grams[3][index]
-		tri_tags_weightage = tri_tags_weightage[index]
-
-		combined_tags = np.array([i for i in dual_tags] + [i for i in tri_tags])
-		combined_weights = np.array([i*self.dual_weight for i in dual_tags_weightage] + [i*self.tri_weight for i in tri_tags_weightage])
-		index = np.argsort(combined_weights)[::-1]
-		combined_tags = combined_tags[index]
-		combined_weights = combined_weights[index]
-		combined = {'tags': combined_tags, 'weights': combined_weights}
-		return combined['tags']
+		tags_final = [t for t in grams[2][:6]]
+		for t, w in zip(grams[3], weights[3]):
+			if w>weights[2][0]/2:
+				tags_final.append(t)
+		for t, w in zip(grams[1], weights[1]):
+			if w>weights[2][0]*4:
+				tags_final.append(t)
+		if len(tags_final) <= 12:
+			tags_final = tags_final + [t for t in grams[3][:4]] + [t for t in grams[1][:4]]
+		return tags_final
 
 	def collect(self, dir_path='./product_wise_reviews/', save_path='./product_wise_tags.csv', return_tags=False, start=0, end=None):
 		if return_tags:
