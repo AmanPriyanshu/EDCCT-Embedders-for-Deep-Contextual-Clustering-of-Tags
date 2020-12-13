@@ -30,7 +30,7 @@ While approaching this problem, we ran into two major problems, we were able to 
 ## Project-Demo:
 
 We have analysed and worked with three embeddings, namely: Universal Sentence Encoders, BERT, GloVe. We finally propose Universal Sentence Encoder as the ideal embedder.
-[Please Check Out Our Demo](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/Final%20Tags%20Generated%20Examples.pdf)
+[Please Check Out Some of Our Examples](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/Final%20Tags%20Generated%20Examples.pdf)
 
 ```console
 Product: B007FXMOV8
