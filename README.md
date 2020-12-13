@@ -18,10 +18,18 @@ EDCCT solves the problem of multiple tags referring to the same thing by combini
 
 While approaching this problem, we ran into two major problems, we were able to overcome both of them. The first one being, frequency based tags, did not give accurate representation of product-reviews. Secondly, lookup word embeddings did not give accurate cluster results, therefore we finally propose a deep contextual representation using Universal Sentence Encoder to embed and cluster similar tags.
 
+## Executing-our-Project:
+
+1. To extract reviews in CSV file please execute: reader.py
+2. To generate tags based on frequency please execute: tagger.py
+3. To cluster similar tags product wise please execute: embedders.py
+4. To look at results, please download: [https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip)
+
+
 ## Project-Demo:
 
 We have analysed and worked with three embeddings, namely: Universal Sentence Encoders, BERT, GloVe. We finally propose Universal Sentence Encoder as the ideal embedder.
-[Please Check Out Our Demo](https://docs.google.com/document/d/1ehXetnZB1Mypdjsxc9VutyriNOssn_wdm5SDT_PEDsM/edit?usp=sharing)
+[Please Check Out Our Demo](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/Final%20Tags%20Generated%20Examples.pdf)
 
 ```console
 Product: B007FXMOV8
