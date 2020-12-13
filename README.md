@@ -21,7 +21,17 @@ While approaching this problem, we ran into two major problems, we were able to 
 ## Project-Demo:
 
 We have analysed and worked with three embeddings, namely: Universal Sentence Encoders, BERT, GloVe. We finally propose Universal Sentence Encoder as the ideal embedder.
-[Please Check Out Out Demo](https://docs.google.com/document/d/1ehXetnZB1Mypdjsxc9VutyriNOssn_wdm5SDT_PEDsM/edit?usp=sharing) 
+[Please Check Out Our Demo](https://docs.google.com/document/d/1ehXetnZB1Mypdjsxc9VutyriNOssn_wdm5SDT_PEDsM/edit?usp=sharing)
+
+```console
+Product: B007FXMOV8
+Orignal tags: [screen protector, rubber tip, rubber tipped, use stylus, touch screen, using stylus, stylus tip, screen use, pen great]
+Generated tags after deleting similar tags: [using stylus, rubber tip]
+
+Product: B0088U4YAG
+Original tags: [car charger, works great, iphone 5, car chargers, two devices, charge phone, charger, charge, charge two devices, charging two devices, enough power charge, charger two ports]
+Generated tags: [charge two devices, car charger]
+```
 
 ## Technologies we used:
 
