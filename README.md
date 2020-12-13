@@ -18,6 +18,11 @@ EDCCT solves the problem of multiple tags referring to the same thing by combini
 
 While approaching this problem, we ran into two major problems, we were able to overcome both of them. The first one being, frequency based tags, did not give accurate representation of product-reviews. Secondly, lookup word embeddings did not give accurate cluster results, therefore we finally propose a deep contextual representation using Universal Sentence Encoder to embed and cluster similar tags.
 
+## Project-Demo:
+
+We have analysed and worked with three embeddings, namely: Universal Sentence Encoders, BERT, GloVe. We finally propose Universal Sentence Encoder as the ideal embedder.
+[Please Check Out Out Demo](https://docs.google.com/document/d/1ehXetnZB1Mypdjsxc9VutyriNOssn_wdm5SDT_PEDsM/edit?usp=sharing) 
+
 ## Technologies we used:
 
 Python, Universal Sentence Encoder(DAN)
