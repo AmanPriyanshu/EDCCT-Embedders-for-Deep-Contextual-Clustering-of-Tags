@@ -20,6 +20,7 @@ While approaching this problem, we ran into two major problems, we were able to 
 
 ## Executing-our-Project:
 
+0. Please install all the necessary libraries mentioned in `requirements.txt`
 1. To extract reviews from JSON into CSV file please execute: reader.py
 2. To extract product-wise reviews please execute: product_wise_generator.pu
 3. To generate tags based on frequency please execute: tagger.py
