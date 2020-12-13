@@ -26,6 +26,13 @@ While approaching this problem, we ran into two major problems, we were able to 
 4. To cluster similar tags product wise please execute: embedders.py
 5. To look at results, please download: [https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip](https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT/blob/main/combined_tags_use.zip)
 
+## Side-Note:
+
+To install GloVe and BERT embeddings, some of the embeddings proposals we made, please follow the given steps, however, please be aware this is not required for the final execution and may be skipped.
+```console
+!wget --no-check-certificate https://storage.googleapis.com/laurencemoroney-blog.appspot.com/glove.6B.100d.txt -O /tmp/glove.6B.100d.txt
+curl https://storage.googleapis.com/bert_models/2020_02_20/uncased_L-4_H-512_A-8.zip > uncased_L-4_H-512_A-8.zip
+```
 
 ## Project-Demo:
 
