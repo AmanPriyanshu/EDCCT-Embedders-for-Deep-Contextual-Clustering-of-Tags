@@ -56,7 +56,7 @@ Python, Universal Sentence Encoder(DAN)
 
 ## Links:
 
-GitHub: https://github.com/AmanPriyanshu/HackOffv3--Team--JSON-Bourne--EDCCT
+GitHub: https://github.com/AmanPriyanshu/EDCCT-Embedders-for-Deep-Contextual-Clustering-of-Tags
 
 Video Demo: 
 YouTube: https://youtu.be/BzK9kgMfw88
