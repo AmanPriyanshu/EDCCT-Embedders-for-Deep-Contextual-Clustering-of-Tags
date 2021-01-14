@@ -1,6 +1,6 @@
-# HackOffv3--Team--JSON-Bourne--EDCCT
+# EDCCT
 
-Team, JSON Bourne presents EDCCT ( Embedders for Deep Contextual Clustering of Tags ), a practical approach towards accurate contextual clustering of review tags. This repository is our submission for HackOff v3.0 Hackathon for the problem statement 1 of the Siemens Healthineers challenge.
+EDCCT ( Embedders for Deep Contextual Clustering of Tags ), a practical approach towards accurate contextual clustering of review tags. This repository is our submission for HackOff v3.0 Hackathon for the problem statement 1 of the Siemens Healthineers challenge.
 
 ## PROJECT NAME:
 
@@ -8,7 +8,7 @@ EDCCT - Embedders for Deep Contextual Clustering of Tags
 
 ## SYNOPSIS: 
 
-Team, JSON Bourne presents EDCCT ( Embedders for Deep Contextual Clustering of Tags ), a practical approach towards accurate contextual clustering of review tags. We use linguistic embedders ([1]: Look Up Word embeddings, [2] Contextual Word Embeddings and [3] Sentence Embeddings) to derive vectorial representation of each of the tags, following which we used cosine similarity to cluster them.
+EDCCT ( Embedders for Deep Contextual Clustering of Tags ), a practical approach towards accurate contextual clustering of review tags. We use linguistic embedders ([1]: Look Up Word embeddings, [2] Contextual Word Embeddings and [3] Sentence Embeddings) to derive vectorial representation of each of the tags, following which we used cosine similarity to cluster them.
 
 ## The problem it solves:
 
